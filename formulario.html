@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andrés Bella"/>
+    <meta name="description" content="Formulario de la 2a actividad de LLMM"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>BR Formulario</title>
+</head>
+<body class="fondoimg">
+   
+    <h1>Breaking Bad - Que comience el juego!</h1>
+   
+    <form action="mailto:raul.rodriguez@proeducaglobal.com" method="post" name="formulario breaking bad" autocomplete="on" target="_blank">
+        
+        <fieldset class="transparente">
+
+            <fieldset class="transparente">
+            <legend>Datos Personales</legend>
+            <p><label for="nombre">Nombre:</label> <input type="text" id="nombre" required></p>
+            <p><label for="apellidos">Apellidos:</label> <input type="text" id="apellidos" required></p>
+            <p><label for="dni">DNI:</label> <input type="text" id="dni" placeholder="12345678X"></p>
+            <p>
+                <label>Sexo:</label>
+                <input type="radio" name="sexo" value="Hombre" id="hombre">
+                <label for="hombre">Hombre</label>
+                <input type="radio" name="sexo" value="Mujer" id="mujer">
+                <label for="mujer">Mujer</label>
+            </p>
+            <p><label for="fecha_nacimiento">Fecha de nacimiento:</label> <input type="date" id="fecha_nacimiento" name="fecha_nacimiento"></p>
+            <p><label for="correo">Correo electrónico:</label> <input type="email" id="correo" placeholder="correo@dominio.com" required></p>
+        </fieldset>
+
+        <fieldset class="transparente">
+            <legend>Dirección Postal</legend>
+            <p><label for="direccion">Dirección:</label> <input type="text" id="direccion" placeholder="C/San José, nº45, 2o piso"></p>
+            <p><label for="codigo-postal">Código postal:</label> <input type="text" id="codigo-postal"></p>
+            <p><label for="ciudad">Ciudad:</label> <input type="text" id="ciudad"></p>
+        </fieldset>
+
+        <fieldset class="transparente">
+            <legend>Personajes Favoritos</legend>
+            <p><label for="personajes">Personaje favorito de Breaking Bad:</label>
+                <select name="personajes_br" id="personajes">
+                    <option value="1">Walter White</option>
+                    <option value="2">Jesse Pinkman</option>
+                    <option value="3">Saul Goodman</option>
+                    <option value="4">Gustava Fring</option>
+                    <option value="5">Pollos Hermanos</option>
+                    <option value="6">Otros</option>
+                </select>
+            </p>
+            <p><label for="comentarios">Comentarios:</label><br>
+                <textarea id="comentarios" placeholder="Escribe lo que quieras" maxlength="100"></textarea>
+            </p>
+            <p><label for="archivo">Archivo adjunto:</label> <input type="file" name="archivo" id="archivo"></p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+        </p>
+        </fieldset>
+        
+    </form>
+    
+</body>
+</html>
