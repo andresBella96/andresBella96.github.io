@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Breaking Bad';
+    src: url('../fonts/Breaking\ Bad.ttf') format('truetype');
+}
+
+body{
+    background-color: #4f661e;
+    font-family: 'Helvetica';
+    color: whitesmoke;
+    height: 100vh;
+    font-size: 10px;
+}
+
+.fondoimg{
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-size: 14px;
+    color: whitesmoke;
+}
+
+.fuente{
+    font-family: 'Breaking Bad';
+    text-align: center;
+    font-size: 40px;
+}
+
+#posterindex {
+    width: 700px;
+    height: 300px;
+    border: 10px outset brown;
+    border-radius: 22px; 
+}
+
+.contenidoindex {
+    margin-top: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+    justify-content: center;
+    align-items: center; 
+    /*No encontré otra manera de espaciar los elementos asociados a esta clase*/
+}
+
+/* Estilos para el fieldset  */
+fieldset.transparente {
+    background-color: rgba(45, 64, 99, 0.5);
+    border: 2px solid rgb(31, 29, 29);
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 4px;
+}
+
+/* Para mostrar los inputs en columnas menos aquellos que he puesto dentro del "not"*/
+form input:not([type="radio"]):not([type="submit"]):not([type="reset"]) {
+    display: block;
+    width: 50%;
+}
+
+/* Para agrandar más la casilla de texto tipo comentario*/
+form textarea {
+    display: block;
+    width: 100%;
+}
+
+/* Cambio del estilo de los botones*/
+input[type="submit"],
+input[type="reset"] {
+    background-color: #8c07c0; 
+    color:  rgb(255, 255, 255);
+    border: 2px solid rgb(31, 29, 29);
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+
+table {
+    border-collapse: collapse;
+    background-color: rgb(46, 40, 40);
+    table-layout: fixed;
+    margin: auto;
+    text-align: center;
+}
+
+th {
+    border: 10px solid rgb(46, 40, 40);
+    padding: 0px;
+}
+
+td {
+    border: 10px solid rgb(46, 40, 40);
+    height: 70px;
+    width: 70px;
+    padding: 2px;
+}
+
+td img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Para recortar la imagen de Walter White y la pistola, que tiene un borde blanco*/
+#recortarwhite {
+    clip-path: inset(0px 3px 0px 0px);
+}
+
+#recortarpistola {
+    clip-path: inset(0px 0px 0px 2px);
+}
+
+#ajustarhank {
+    background-image: url(../img/hankschrader.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+  
+/* Estilos para las iniciales y los nombres */
+.iniciales {
+    font-size:40px;
+    font-weight: bold;
+    color: rgb(46, 40, 40);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+  
+.nombres {
+    font-size: 10px;
+    color: rgb(46, 40, 40);
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Colores de cada grupo de celdas*/
+.bg1 { background-color: rgb(160, 199, 19); }
+.bg2 { background-color: rgb(168, 124, 165); }
+.bg3 { background-color: rgb(117, 155, 28); }
+.bg4 { background-color: rgb(236, 236, 195); }
+.bg5 { background-color: rgb(98, 104, 44); }
+.bg6 { background-color: rgb(203, 243, 84); }
+.bg7 { background-color: rgb(191, 201, 164); }
+.bg8 { background-color: rgb(107, 122, 65); }
+.bg9 { background-color: rgb(207, 224, 130); }
+.bg10 { background-color: rgb(222, 224, 61); }
