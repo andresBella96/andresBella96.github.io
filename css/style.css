@@ -55,6 +55,11 @@ fieldset.transparente {
     border-radius: 4px;
 }
 
+fieldset legend {
+    font-size: 20px;
+    color: whitesmoke;
+}
+
 /* Para mostrar los inputs en columnas menos aquellos que he puesto dentro del "not"*/
 form input:not([type="radio"]):not([type="submit"]):not([type="reset"]) {
     display: block;
@@ -78,7 +83,7 @@ input[type="reset"] {
     border-radius: 4px;
 }
 
-
+/* Sección de la tabla*/
 table {
     border-collapse: collapse;
     background-color: rgb(46, 40, 40);
@@ -140,7 +145,6 @@ td img {
     margin: 0;
     padding: 0;
 }
-
 
 /*Colores de cada grupo de celdas*/
 .bg1 { background-color: rgb(160, 199, 19); }
